@@ -37,8 +37,14 @@ import {
 } from 'lucide-react';
 
 // --- CONFIGURATION FIREBASE ---
-const firebaseConfig = JSON.parse(typeof __firebase_config !== 'undefined' ? __firebase_config : '{}');
-const appId = typeof __app_id !== 'undefined' ? __app_id : 'aura-index-v1';
+const firebaseConfig = {
+  apiKey: "AIzaSyDct8USnQM78QdVHxmg4P94fejPacfc6RA",
+  authDomain: "aurabienveillance.firebaseapp.com",
+  projectId: "aurabienveillance",
+  storageBucket: "aurabienveillance.firebasestorage.app",
+  messagingSenderId: "320221952933",
+  appId: "1:320221952933:web:828cdf21b6af6dedab464c"
+};
 
 // Initialisation avec vérification de sécurité
 let app, auth, db;
